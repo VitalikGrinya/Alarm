@@ -27,6 +27,7 @@ public class Alarm : MonoBehaviour
     public void StopAudio()
     {
         float volume = 0f;
+        
         StopCoroutineChangeVolume();
         _checkCoroutine = StartCoroutine(ChangeVolume(volume));
     }
